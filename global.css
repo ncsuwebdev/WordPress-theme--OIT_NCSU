@@ -1,0 +1,243 @@
+/*
+North Carolina State University
+Global Stylesheet
+*/
+
+/* BEGIN LAYOUT ------------------------------------- */
+
+body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:62.5%;margin:0;padding:0;width:100%;
+}
+/* Note: Make HTML 5 elements block-level for consistent styling */
+
+/* General ************************************************/
+#two_col_vert #content { width:794px; /*border:solid 1px #c00;*/}
+#three_col_vert #content {width:530px; float:left; /*border:solid 1px #c00;*/}
+
+article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+#wrapper{margin:0 auto;padding:0;width:1000px; position: relative; margin-bottom:10%;}
+#middle{background-color:#FFF;color:#333;padding:0px 0 0;width:1000px;}
+#two_col_horiz section#content{clear:left;}
+#three_col_vert #headertop,#two_col_vert #headertop{margin-bottom:12px; position:relative;}
+#content{padding:0 ;float:left;}
+
+
+/* NOSCRIPT ALERT */
+#js-alert { background-color: #CC0000; border-bottom: 1px solid white; color: white; font-size: 1.5em; padding: .3em; text-align: center;}
+
+/* HEADER AND FOOTER */
+#three_col_vert #headertop, #two_col_vert #headertop { width:1000px;overflow: hidden; margin-bottom:2px; }
+#three_col_vert .bg #headertop,#two_col_vert .bg #headertop{border:none;margin-left:2px;}
+
+#headertop{background:url(../img/topnav.jpg) no-repeat 0 0;margin:0 auto;padding:0;width:1000px; height:130px; color:#fff;}
+#headertop a {color:#fff;}
+
+/* BRANDING BAR */
+#topnav {font-family:Arial, Helvetica, sans-serif; position:relative;z-index:99;padding:10px 0px 6px 0;float:right;}
+#topnav li{float:left;text-transform:uppercase;margin:4px 0 0 0;padding:4px 9px 2px 8px; border-left:solid 1px #ccc;}
+#topnav li.first{border:0}#topnav li a{color:#a30d01;text-decoration:none;white-space:nowrap}#topnav li a:hover{text-decoration:underline}
+
+/* NAVIGATION */
+
+/* Utility Nav ****************************************/
+
+ul#menu-utility-nav { float: right; margin-top: 15px;}
+
+ul#menu-utility-nav li { text-transform: uppercase; font-size: 1.2em; font-weight: bold; display: inline; padding-right: 3px; }
+ul#menu-utility-nav li a { color: black; text-decoration: none; }
+
+
+/* Left Navigation ****************************************/
+nav {display:inline;float:left; background-color:#e5e2d1; min-height:400px;}
+#middle nav {color:#fff; background:#efe9e4;font-family:helvetica, arial, sans-serif;}
+#middle nav ul {padding:0;margin:0; }
+#three_col_vert nav,#two_col_vert nav{margin:0 ;width:204px}
+
+div.primaryNav #menu {background:#000; padding:5px 0 10px;}
+div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px solid #fff;padding:5px 0 10px;}
+#menu ul {width: 204px;}
+#menu ul li {
+		background-image: url(../img/bullet_nav.gif);
+		background-position:16px 0.85em;
+		background-repeat:no-repeat no-repeat;
+		display:block; 
+		padding:6px 3px 6px 28px; 
+		font-size:1.3em; font-weight:bold; 
+		line-height:1.3em; 
+		text-decoration:none; 
+		text-transform:uppercase; 
+		/*border:solid 1px #009900;*/
+	}
+#menu ul li a {color:#fff;}
+#menu ul li a:hover {text-decoration:underline;}
+
+#menu ul li ul {left:-999em;position:absolute;}
+#menu ul li.current_page_item {
+	background-image: url(../img/bullet_nav_active.gif);
+	background-position:16px 0.85em;
+	background-repeat:no-repeat no-repeat;
+	
+}
+#menu ul li.current_page_item ul {left:0;position:relative;background:#383838;  margin:5px 0 0px -28px;padding:3px 0 8px; }
+#menu ul li.current_page_item ul li {
+	background:none;
+	padding:2px 2px 2px 28px;
+	font-size:.9em;
+	line-height:1.4em; 
+	font-weight:normal;
+	text-transform:capitalize;
+}
+
+/* Right Navigation ***************************************/
+
+#subNav {background-color:#e1dece; }
+#subNav h2 {margin:0;padding:12px 0px 0px 10px; width:210px; height:26px; text-transform:uppercase; background-color:#5c5541; color:#fff; font-weight:600; }
+#subNav h2.widgettitle {display:none;}
+#subNav ul {margin:0; padding:8px 4px 6px 11px;}
+#subNav ul li {display:block; padding:5px 0px; font-size:1.3em; line-height:1em;}
+#subNav ul li.current_page_item a {}
+#subNav ul ul {margin-top:7px;}
+#subNav ul ul li {display:block; padding:4px 0px 4px 8px; font-size:.9em; line-height:1.1em; }
+#subNav ul li a {color:#383838;}
+
+
+/* SIDEBAR */
+aside {display:inline;float:right;margin:0;padding:4px 4px 0 4px;width:250px; background-color:#e5e3d6; }
+aside#sidebar .widget {margin:0 0 4px; padding:0; background:#67849C;}
+aside#sidebar .widget .widgettitle {
+	display:block; padding:12px 4px 12px 20px; background:#556677;text-transform:uppercase; font-weight:bold; color:#fff;
+	background-image: url(../img/bullet_nav_active.gif);
+	background-position:10px 1.15em;
+	background-repeat:no-repeat no-repeat;}
+
+aside#sidebar li.widget {list-style-type:none;}
+aside#sidebar li.widget ul {line-height:1.3em;font-size:1.1em;margin:0;padding:8px 12px;}
+aside#sidebar li.widget ul li{margin:0 0 .5em; list-style:none;}
+aside#sidebar li.widget ul li a:link,div#middle aside#sidebar li.widget ul li a:visited{color:#fff;}
+aside#sidebar li.widget ul li a:hover{text-decoration:underline;}
+
+div#home aside#sidebar {float:right; position:relative; top:282px;}
+
+
+/* SEARCH BAR */
+form#searchform {margin:0 0 10px 5px; height:90px; width:268px; padding:0 0 5px 0; float:right; background-color:#a20;}
+form#searchform div.search-box {width:236px; height:19px; margin: 18px 4px 0px 15px;padding:5px;}
+form#searchform input.search-query {width:195px;float:left;height:12px;padding:5px;border:none;background-color:#fff; font-size: 1.0em; font-family:Arial, Helvetica, sans-serif; color:#666;  }
+form#searchform input.search-button {margin:0px;padding:0;height:24px;width:28px;float:left;background:url('../img/searchbtn.jpeg') no-repeat 0 0 transparent;border:0 none;cursor:pointer;float:right;height:22px;outline:medium none;text-indent:-9999px;width:28px}
+
+
+
+/* FOOTER */
+footer {font-family:Arial, Helvetica, sans-serif; margin: 2px 0px; border-top:solid 4px #c00; text-transform:uppercase; padding:2px 0; color:#900; }
+
+footer div.footer_top_holder {background:#c00; border-top:solid 1px #fff; height:42px;line-height:38px; }
+
+footer ul li {display:inline;}
+footer ul li a {font-size:1.025em;color:#fff;}
+footer ul li:after {content:" | ";padding:0 5px;}
+footer ul li:last-child:after {content:none;}
+footer div.footer_top_holder ul a {color:#fff; text-decoration:none;}
+
+footer div.address {color:#c00; font-weight:bold; font-size:1.2em; padding:20px;}
+
+/* END LAYOUT --------------------------------------- */  
+
+
+/* BEGIN TYPOGRAPHY --------------------------------- */
+
+/* HEADINGS */
+h1,h2,h3,h4,h5,h6{color:#cc0000;font-weight:400}
+h1{border-bottom:1px #cfcdc8 solid;color:#666;font-size:1.95em;margin-bottom:22px;padding-bottom:20px}
+h2{font-size:1.6em; padding:18px 0 22px 0;}
+h3{font-size:1.4em;padding:0 0 10px}
+h3{font-size:1.4em;padding:0 0 10px}
+h4{font-size:1.3em;padding:10px 0}
+h5{font-size:1.2em;padding:10px 0}
+h6{font-size:1.2em;padding:10px 0}
+#headertop h5{text-transform:uppercase;letter-spacing:.1em;font-family:"Arial", Helvetica, sans-serif;font-size:3.7em;font-weight:400;line-height:.81em;margin:0;padding-top:25px;float:left;}
+#two_col_horiz #headertop h5{border-bottom:0}
+/*.bg #headertop h5{margin-top:0;padding-top:15px}*/
+#headertop h5 a,#headertop h5 a:hover,#headertop h5 a:visited{text-decoration:none}
+.bg #headertop h5,.bg #headertop h5{border-bottom:none;border-top:none}
+
+/* TEXT ELEMENTS */
+
+a:link{color:#CC0000; text-decoration:none;}
+a:visited{color:#CC0000}
+a:active,a:hover{text-decoration:underline; color:#CC0000;}
+p{color:#333;font-family:"Verdana", Arial , Helvetica, sans-serif;font-size:1.1em;line-height:1.6em;margin-bottom:18px}
+#content p {}
+#content ul {list-style:disc; }
+#content ol {list-style:decimal;}
+#content ul li, #content ol li {font-size:1.1em;line-height:1.4em;padding-bottom:5px}
+#content li li{font-size:100%}
+#content ul li{list-style-image:url(../img/right-arrow.gif)}
+#content p,#content li,#content blockquote{padding-right:40px}
+#two_col_horiz #content blockquote, #two_col_vert #content blockquote{padding-left: 40px; padding-right:40px}
+ul{margin:0 30px 18px}
+ol{margin:0 0 18px 1.5em}
+ol ol{list-style:upper-alpha}
+ol ol ol{list-style:lower-roman}
+ol ol ol ol{list-style:lower-alpha}
+ul ul,ol ol,ul ol,ol ul{margin-bottom:0}
+dl{margin:0 0 24px}
+dt{font-weight:700}
+dd{margin-bottom:18px}
+strong{font-weight:700}
+cite,em,i{font-style:italic}
+big{font-size:131.25%}
+ins{background:#ffc;text-decoration:none}
+blockquote{font-style:italic;padding:0 3em}
+blockquote cite,blockquote em,blockquote i{font-style:normal}
+pre{background:#f7f7f7;color:#222;line-height:18px;margin-bottom:18px;padding:1.5em}
+abbr,acronym{border-bottom:1px dotted #666;cursor:help}
+sup,sub{height:0;line-height:1;position:relative;vertical-align:baseline}
+sup{bottom:1ex}
+sub{top:.5ex}
+input[type="text"],textarea{-moz-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);-webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);background:#f9f9f9;border:1px solid #ccc;box-shadow:inset 1px 1px 1px rgba(0,0,0,0.1);padding:2px}
+thead{border-bottom:1px solid #999;border-top:1px solid #999}
+tr td{padding:5px}
+table{margin:5px 0}
+.bg footer p{color:#FFF}
+
+/* Text meant only for screen readers  */
+.screen-reader-text{left:-9000px;position:absolute;}
+
+/* END TYPOGRAPHY ----------------------------------- */
+
+
+/* BEGIN NCSU BANNER CODE ----------------------------------- */
+a.access {height:1px; left:-999px; position:absolute; top:auto; width:1px;}
+a.access:focus {background-color:#000000;color:#FFFFFF;height:auto;left:0;overflow:auto;padding:5px 2px;right:0;text-align:left;width:120px; z-index:1000;}
+#headertop .logo {bottom:0;height:118px;left:0;overflow:hidden;position:absolute;text-indent:-9000px;width:720px;z-index:95;}
+#headertop .logo a#ncsu-banner-link {display:block;float:left;height:118px;width:587px;}
+#headertop div.logo a#ncsu-125-link {display:block;float:left;height:118px;width:85px;}
+/* END BANNER STUFF ----------------------------------- */
+
+
+/* BEGIN IMAGES ------------------------------------- */
+
+.alignleft{float:left;margin-right:20px}
+.alignright{float:right;margin-left:20px}
+#content .aligncenter,#content img.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}
+#content img.alignleft,#content img.alignright,#content img.aligncenter{margin-bottom:12px}
+#content figure{background-color:#ececec;line-height:1.4em;margin-bottom:15px;padding:0;text-align:center}
+#content figure img{border:10px solid #ececec;margin:0}
+#content figcaption{color:#777;font-size:1.1em;margin:5px;padding:0 2px 10px 5px;text-align:left}
+#content .width480 img{background-color:#fff;border:none}
+#content .width480{background-color:#fff;width:480px}
+#content .width480 figcaption{padding-bottom:0}
+#three_col .width480{margin-right:0}
+/*important - will cause sidebar to drop down with margin  */
+.width265{width:265px}
+#content .width265 figcaption{font-size:.95em}
+.crop {width:794px; max-height:280px; overflow:hidden; padding-left:2px; margin-bottom:2px; }
+.wp-post-image {}
+
+/* END IMAGES --------------------------------------- */
+
+
+/* MISC CLASSES AND ELEMENTS*/
+
+hr{background-color:#E7E7E7;border:0;clear:both;height:1px;margin-bottom:18px}
+hr.divider{border:none;border-top:1px #cfcdc8 solid;height:1px}
+.clear {clear:both}

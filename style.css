@@ -1,0 +1,91 @@
+/*
+THEME NAME: OIT NC State Homepage Theme
+THEME URI: 
+DESCRIPTION: NC State look-alike theme designed by OIT Design. Built off Sandbox Theme by Andy Skelton and Scott Allan Wallick.
+AUTHOR: Jen Riehle, NC State OIT Design
+AUTHOR URI: http://oitdesign.ncsu.edu
+Version: 0.1
+License: GNU General Public License
+License URI: license.txt
+TAGS: two-column, three-column, NC State framework, widgets, white, gray, fixed-width, featured content
+
+*/
+
+div#container,div#primary{margin-top:2em;}
+form#commentform .form-label{margin:1em 0 0;}
+form#commentform span.required{background:#fff;color:#c30;}
+form#commentform,form#commentform p{padding:0;}
+input#author,input#email,input#url,textarea#comment{padding:.2em;}
+div.comments ol li{margin:0 0 3.5em;}
+textarea#comment{height:13em;overflow:auto;width:66%;margin:0 0 .5em;}
+.alignright,img.alignright{float:right;margin:1em 0 0 1em;}
+.alignleft,img.alignleft{float:left;margin:1em 1em 0 0;}
+.aligncenter,img.aligncenter{display:block;text-align:center;margin:1em auto;}
+div.gallery{clear:both;height:180px;width:100%;margin:1em 0;}
+div.gallery dl{overflow:hidden;text-align:center;margin:1em auto;}
+div.gallery dl.gallery-columns-1{width:100%;}
+div.gallery dl.gallery-columns-2{width:49%;}
+div.gallery dl.gallery-columns-3{width:33%;}
+div.gallery dl.gallery-columns-4{width:24%;}
+div.gallery dl.gallery-columns-5{width:19%;}
+div#nav-above{margin-bottom:1em;}
+div#nav-below{margin:1em;}
+div#nav-images{height:150px;margin:1em 0;}
+div.navigation{height:1.25em;}
+div.navigation div.nav-next{float:right;text-align:right;}
+div.sidebar h3{font-size:1.2em;}
+div.sidebar input#s{width:7em;}
+div.sidebar li{list-style:none;margin:0 0 2em;}
+div.sidebar li form{margin:.2em 0 0;padding:0;}
+div.sidebar ul ul{margin:0 0 0 1em;}
+div.sidebar ul ul li{list-style:disc;margin:0;}
+div.sidebar ul ul ul{margin:0 0 0 .5em;}
+div.sidebar ul ul ul li{list-style:circle;}
+div#menu ul li,div.gallery dl,div.navigation div.nav-previous{float:left;}
+div#header,div#footer{text-align:center;}
+input#author,input#email,input#url,div.navigation div{width:50%;}
+div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul{margin:0;padding:0;}
+div.hentry{margin:0 0 3em 1.4em; clear:both;}
+img.attachment-thumbnail{width:120px;float:left;margin:6px 2em 1em 0;}
+
+div.feature-image {float:right;}
+div.feature-image img {border:solid 3px #ddd; margin:0 0 0 4px;}
+
+div#menu ul ul ul a,p.wp-caption-text{font-style:italic;}
+
+/* Header *************************************************/
+
+/* for banner nav, if you've got one */
+.menu-bannernav-container {padding:20px 3px 10px 0px; width:1000px; text-align:right; color: #fff;}
+.menu-bannernav-container ul {margin:0; padding:0;}
+.menu-bannernav-container ul li {font-size: 1.2em; display: inline;}
+.menu-bannernav-container ul li:after {content:" | ";}
+.menu-bannernav-container ul li:last-child:after {content:none;}
+.menu-bannernav-container ul li a {color: #fff; text-decoration: none;}
+.menu-bannernav-container ul li a:hover { text-decoration:underline;}
+
+
+
+
+/* Homepage Columns ***************************************/
+
+div#homepage_column_holder {margin:0; width:794px;}
+div#homepage_column_holder img {border-bottom: solid 8px #5c5541;}
+div#homepage_column_holder div.column {width: 32.2%; float: left; margin-left:8px;}
+div#homepage_column_holder div.column.last {margin-right: 0px;}
+
+div#homepage_column_holder .widget {margin:0 0 4px; padding:0;}
+div#homepage_column_holder .widget .widgettitle {
+	display:block; padding:12px 4px 12px 10px; border-bottom:solid 4px #c00;text-transform:uppercase; font-weight:bold; color:#383838;}
+
+div#homepage_column_holder li.widget {list-style-type:none;}
+div#homepage_column_holder li.widget ul {line-height:1.3em;font-size:1.1em;margin-left:10px;padding:8px 12px;}
+div#homepage_column_holder li.widget ul li{margin:0 0 .5em;}
+div#homepage_column_holder li.widget ul li a:link,div#middle aside#sidebar li.widget ul li a:visited{color:#fff;}
+div#homepage_column_holder li.widget ul li a:hover{text-decoration:underline;}
+
+
+/* Content ***************************************/
+h2.entry-title {font-size:2.3em; font-weight:normal; color:#c00; padding:14px 0px 18px;}
+h2.entry-title span {padding-left:12px;}
+h3.entry-title a {color:#c00; font-weight:normal;}
