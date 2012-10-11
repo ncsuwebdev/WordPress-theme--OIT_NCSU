@@ -55,6 +55,7 @@ Javascript is disabled. The styling of this page may not render properly in cert
      <div class="logo" role="banner" aria-labelledby="ncsu-banner-link">
         <a href="http://www.ncsu.edu/" id="ncsu-banner-link" title="Return to the North Carolina State University home page">North Carolina State University</a>
         <!--<a href="http://125.ncsu.edu" id="ncsu-125-link" title="NC State celebrates 125 years.">125 Years</a>-->
+        <a href="<?php bloginfo('home'); ?>" id="homepage-banner-link" title="Return to home page"><?php bloginfo('name'); ?></a>
     </div>
     
         <ul id="topnav" role="navigation" aria-label="Universal ncsu.edu navigation toolbar">

@@ -50,7 +50,7 @@ function addMyMenus() {
 			array(
 			  'primary' => 'Primary Navigation',
 			  'secondary' => 'Secondary Navigation',
-			  'footer' => 'Footer Navigation'
+			  //'footer' => 'Footer Navigation'
 			)
 		);
 	}
