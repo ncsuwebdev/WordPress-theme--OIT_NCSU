@@ -35,18 +35,24 @@
                                                
                                                       
                     </div><!-- end tab -->
-                <?php endwhile; ?>
+                <?php 
+					endwhile;
+					wp_reset_query(); 
+				?>
                 
                 <div class="clear"></div>
 
                 <ul>
-                	<?php query_posts( 'category_name=feature&posts_per_page=5' ); ?>
+                	<?php query_posts( 'category_name=feature&&posts_per_page=5' ); ?>
 					<?php 
 						$i=1;
 						while ( have_posts() ) : the_post() ?>    
                         <li class="tab"><a href="#tabs-<?php the_id() ?>"><?php echo $i; ?></a></li>
                         <?php $i++; ?>
-                    <?php endwhile; ?>
+                    <?php 
+						endwhile; 
+						wp_reset_query()
+					?>
                 </ul>
 
             </div> <!-- end #tabs -->
@@ -56,8 +62,9 @@
         </div> <!-- end player -->
         <?php endif; ?>
         
-        
-         <?php query_posts(); ?>      
+        <?php global $query_string;
+			query_posts( $query_string );  ?>
+            
 		<?php while ( have_posts() ) : the_post() ?>
 
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
@@ -86,7 +93,10 @@
 
 			<?php comments_template() ?>
             
-            <?php endwhile; ?>
+            <?php 
+				endwhile; 
+				wp_reset_query()
+			?>
             
             <div id="nav-below" class="navigation">
                 <div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>

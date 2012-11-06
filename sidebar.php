@@ -2,7 +2,11 @@
     <?php //get_search_form(); ?>
     
     <?php 
-	if ( has_post_thumbnail() ) { ?> <nav id="nav" style="padding-bottom:280px;" role="navigation"> <?php ;} 
+	if ( is_front_page() ) { ?> <nav id="nav" role="navigation"> <?php ;
+	}
+	else if ( has_post_thumbnail() ) { ?> <nav id="nav" style="padding-bottom:280px;" role="navigation"> <?php ;
+	} 
+	
 	else {
 	?>
     <nav id="nav" role="navigation">
