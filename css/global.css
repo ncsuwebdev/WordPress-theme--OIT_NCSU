@@ -196,8 +196,6 @@ aside#sidebar li.widget ul li a:hover{text-decoration:underline;}
 
 aside#sidebar li.widget_search .widgettitle {display:none;}
 
-div#home aside#sidebar {float:right; position:relative; top:282px;}
-
 
 #sidebar-new::after {
   clear:both;

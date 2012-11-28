@@ -8,9 +8,12 @@
 
 <section id="content" role="main">
 	<h6 class="screen-reader-text">Content</h6>
-    
+  
        <?php query_posts( 'category_name=feature&&posts_per_page=5' ); ?>
        <?php if ( have_posts()) : ?>
+       	<style type="text/css">
+	   		div#home aside#sidebar {float:right; position:relative; top:282px;}
+		</style>
        <div id="player">      
             <div id="tabs">
                 
@@ -55,8 +58,7 @@
 					?>
                 </ul>
 
-            </div> <!-- end #tabs -->
-            
+            </div> <!-- end #tabs -->   
             
             
         </div> <!-- end player -->
@@ -109,5 +111,5 @@
     <!-- end #content -->
    
    
-<?php get_sidebar(home) ?>                                             
+                                            
 <?php get_footer() ?>
