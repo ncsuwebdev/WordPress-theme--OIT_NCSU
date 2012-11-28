@@ -1,4 +1,4 @@
-          <div class="clear"></div>
+          <div class="foot-clear"></div>
           
     		<footer role="contentinfo" id="foot">
             <h6 class="screen-reader-text">Footer</h6>

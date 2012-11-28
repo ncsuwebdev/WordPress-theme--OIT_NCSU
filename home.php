@@ -105,11 +105,10 @@
                 <div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
             </div>
             
-				
             
     </section>
     <!-- end #content -->
-   
+
    
                                             
 <?php get_footer() ?>
