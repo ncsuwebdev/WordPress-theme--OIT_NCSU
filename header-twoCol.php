@@ -72,6 +72,7 @@ Javascript is disabled. The styling of this page may not render properly in cert
         
             
             <a href="<?php bloginfo('home'); ?>" class="access"><?php bloginfo('name'); ?></a>
+             <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
                     
                 <form action="<?php bloginfo('home'); ?>" id="searchform" method="get" role="search">
                 <div class="search-box"> 

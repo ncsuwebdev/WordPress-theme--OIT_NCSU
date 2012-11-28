@@ -640,4 +640,25 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Adds a theme option for a custom header
+$args = array(
+	'width'         => 720,
+	'height'        => 60,
+	'default-image' => get_template_directory_uri() . '/img/custom-header.png',
+	'uploads' => true,
+	'header-text' => false,
+);
+add_theme_support( 'custom-header', $args );
+
+// Add a "featured" category to make the homepage slider implementation easier
+function create_my_cat () {
+    if (file_exists (ABSPATH.'/wp-admin/includes/taxonomy.php')) {
+        require_once (ABSPATH.'/wp-admin/includes/taxonomy.php'); 
+        if ( ! get_cat_ID( 'Feature' ) ) {
+            wp_create_category( 'Feature' );
+        }
+    }
+}
+add_action ( 'after_setup_theme', 'create_my_cat' );
+
 ?>

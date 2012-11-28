@@ -28,8 +28,9 @@ article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu
 #three_col_vert #headertop, #two_col_vert #headertop { width:1000px;overflow: hidden; margin-bottom:2px; }
 #three_col_vert .bg #headertop,#two_col_vert .bg #headertop{border:none;margin-left:2px;}
 
-#headertop{background:url(../img/topnav.jpg) no-repeat 0 0;margin:0 auto;padding:0;width:1000px; height:130px; color:#fff;}
+#headertop{background:url(../img/topnav-BLANK.jpg) no-repeat 0 0;margin:0 auto;padding:0;width:1000px; height:130px; color:#fff;}
 #headertop a {color:#fff;}
+
 
 /* BRANDING BAR */
 #topnav {font-family:Arial, Helvetica, sans-serif; position:relative;z-index:99;padding:10px 0px 6px 0;float:right;}
@@ -71,14 +72,21 @@ div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px
 #menu ul li a:hover {text-decoration:underline;}
 
 #menu ul li ul {left:-999em;position:absolute;}
-#menu ul li.current_page_item {
+#menu ul li.current-menu-item {
 	background-image: url(../img/bullet_nav_active.gif);
 	background-position:16px 0.85em;
 	background-repeat:no-repeat no-repeat;
-	
 }
-#menu ul li.current_page_item ul {left:0;position:relative;background:#383838;  margin:5px 0 0px -28px;padding:3px 0 8px; }
-#menu ul li.current_page_item ul li {
+#menu ul li.current-menu-item ul, 
+#menu ul li.current-menu-parent ul {
+	left:0;
+	position:relative;
+	background:#383838;  
+	margin:5px 0 0px -28px;
+	padding:3px 0 8px; 
+}
+#menu ul li.current-menu-item ul li,
+#menu ul li.current-menu-parent ul li {
 	background:none;
 	padding:2px 2px 2px 28px;
 	font-size:.9em;
@@ -210,7 +218,7 @@ div#home aside#sidebar {float:right; position:relative; top:282px;}
 
 
 /* SEARCH BLOCKS */
-#headertop form#searchform {float:right;margin:0 0 10px 500px; height:90px; width:268px; padding:0 0 5px 0; background-color:#a20;}
+#headertop form#searchform {float:right;margin:0 0 10px 0px; height:90px; width:268px; padding:0 0 5px 0; background-color:#a20;}
 #headertop form#searchform div.search-box {width:236px; height:22px; margin: 13px 4px 0px 15px;padding:5px;}
 #headertop form#searchform input.search-query {width:195px;float:left;height:14px;padding:5px;border:none;background-color:#fff; font-size: 1.0em; font-family:Arial, Helvetica, sans-serif; color:#666;  }
 #headertop form#searchform input.search-button {margin-top:2px;padding:0;width:28px;float:left;background:url('../img/searchbtn.jpeg') no-repeat 0 0 transparent;border:0 none;cursor:pointer;float:right;height:22px;outline:medium none;text-indent:-9999px;}
