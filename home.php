@@ -2,18 +2,19 @@
 		get_header(twoCol);
 	else :
 	 	get_header();
-		get_sidebar(home);
 	endif;  ?>
 <?php get_sidebar() ?>
 
 <section id="content" role="main">
 	<h6 class="screen-reader-text">Content</h6>
-  
+    
        <?php query_posts( 'category_name=feature&&posts_per_page=5' ); ?>
        <?php if ( have_posts()) : ?>
-       	<style type="text/css">
-	   		div#home aside#sidebar {float:right; position:relative; top:282px;}
-		</style>
+       
+       <style type="text/css">
+	   aside#sidebar {margin-top:288px;}
+	   </style>
+      
        <div id="player">      
             <div id="tabs">
                 
@@ -64,6 +65,7 @@
         </div> <!-- end player -->
         <?php endif; ?>
         
+        
         <?php global $query_string;
 			query_posts( $query_string );  ?>
             
@@ -108,7 +110,7 @@
             
     </section>
     <!-- end #content -->
-
+<?php if ( is_active_sidebar ( 'home_sidebar' ) ) : get_sidebar(home); endif; ?>
    
                                             
 <?php get_footer() ?>

@@ -11,7 +11,7 @@ body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:62.5%;margin:0;
 
 /* General ************************************************/
 #two_col_vert #content { width:794px; /*border:solid 1px #c00;*/}
-#three_col_vert #content {width:530px; float:left; /*border:solid 1px #c00;*/}
+#three_col_vert #content {width:524px; float:left; /*border:solid 1px #c00;*/}
 
 article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
 #wrapper {margin:0 auto;padding:0;width:1000px; position: relative; margin-bottom:10%;}
@@ -113,7 +113,7 @@ aside {display:inline;float:right;margin:0;padding:4px 4px 0 4px;width:250px;  }
 aside#sidebar {
   display:block;
   float:right;
-  margin-top:38px;
+  margin-top:28px;
   overflow:hidden;
   width:248px;
   color:#000;
@@ -156,31 +156,31 @@ aside#sidebar .widget {
 
 /* TEXT WIDGET */
 
-aside#sidebar .widget_text h3 {
+#middle aside#sidebar .widget_text h3 {
   background-image:url(../img/sidebar_header-arrow.png);
   background-position:0 10px;
   background-repeat:no-repeat no-repeat;
   font-size:1.2em;
   
 }
-aside#sidebar .widget_text h3.widgettitle {padding-top:14px; letter-spacing:normal;font-weight:600;background-color:#fff;color:#333;text-transform:capitalize;}
+#middle aside#sidebar .widget_text h3.widgettitle {padding-top:14px; letter-spacing:normal;font-weight:600;background-color:#fff;color:#333;text-transform:capitalize;}
 
-aside#sidebar .widget_text {
+#middle aside#sidebar .widget_text {
   border:1px solid #FF9897;
   background:none;
 }
 
-aside#sidebar .widget_text a {
+#middle aside#sidebar .widget_text a {
   color:#333333;
   display:block;
   text-decoration:none;
 }
-aside#sidebar .widget_text h3, aside#sidebar .textwidget {
+#middle aside#sidebar .widget_text h3, aside#sidebar .textwidget {
   font-size:1.2em;
   padding:10px 20px;
 }
 
-aside#sidebar .widget_text img {
+#middle aside#sidebar .widget_text img {
   margin:0;
   padding:-10px -20px;
   height:143px;
@@ -188,13 +188,13 @@ aside#sidebar .widget_text img {
   border:solid 1px #FFFF33;
 }
 
-aside#sidebar li.widget {list-style-type:none;}
-aside#sidebar li.widget ul {line-height:1.3em;font-size:1.1em;margin:0;padding:8px 12px;}
-aside#sidebar li.widget ul li {margin:0 0 .5em; list-style:none;}
-aside#sidebar li.widget ul li a:link, aside#sidebar li.widget ul li a:visited{color:#c00;}
-aside#sidebar li.widget ul li a:hover{text-decoration:underline;}
+#middle aside#sidebar li.widget {list-style-type:none;}
+#middle aside#sidebar li.widget ul {line-height:1.3em;font-size:1.1em;margin:0;padding:8px 12px;}
+#middle aside#sidebar li.widget ul li {margin:0 0 .5em; list-style:none;}
+#middle aside#sidebar li.widget ul li a:link, aside#sidebar li.widget ul li a:visited{color:#c00;}
+#middle aside#sidebar li.widget ul li a:hover{text-decoration:underline;}
 
-aside#sidebar li.widget_search .widgettitle {display:none;}
+#middle aside#sidebar li.widget_search .widgettitle {display:none;}
 
 
 #sidebar-new::after {
