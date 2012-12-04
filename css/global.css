@@ -11,14 +11,14 @@ body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:62.5%;margin:0;
 
 /* General ************************************************/
 #two_col_vert #content { width:794px; /*border:solid 1px #c00;*/}
-#three_col_vert #content {width:524px; float:left; /*border:solid 1px #c00;*/}
+#three_col_vert #content {width:530px; /*float:left; border:solid 1px #c00;*/}
 
 article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
 #wrapper {margin:0 auto;padding:0;width:1000px; position: relative; margin-bottom:10%;}
 #middle {background-color:#FFF; background-image:url(../img/navBack.jpg); background-repeat:repeat-y; color:#333;padding:0px 0 0;width:1000px; }
 #two_col_horiz section#content {clear:left;}
 #three_col_vert #headertop,#two_col_vert #headertop {margin-bottom:12px; position:relative;}
-#content {padding:0 ;float:left;}
+#content {padding:0px 10px 0px 0px;float:left;}
 
 
 /* NOSCRIPT ALERT */
@@ -247,7 +247,8 @@ footer div.address {color:#c00; font-weight:bold; font-size:1.2em; padding:20px;
 
 /* HEADINGS */
 h1,h2,h3,h4,h5,h6{color:#cc0000;font-weight:400}
-h1{border-bottom:1px #cfcdc8 solid;color:#666;font-size:1.95em;margin-bottom:22px;padding-bottom:20px}
+h1{border-top:1px #cfcdc8 solid;color:#666;font-size:1.95em;margin-bottom:12px;padding-top:10px}
+.p1 h1 {border:none;}
 h2{font-size:1.6em; padding:18px 0 22px 0;}
 h3{font-size:1.4em;padding:0 0 10px}
 h3{font-size:1.4em;padding:0 0 10px}

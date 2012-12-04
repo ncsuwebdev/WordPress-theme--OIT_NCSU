@@ -17,7 +17,7 @@
 				<div class="entry-content">
 					<?php if (has_post_thumbnail()): ?>
                     <div class="feature-image">
-                    	<?php if ( has_post_thumbnail() ) { the_post_thumbnail('article-thumbnail'); } ?>
+                    	<?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                         <?php //the_post_thumbnail('medium'); ?>
                         <p><?php the_post_thumbnail_caption(); ?></p>
                     </div>
