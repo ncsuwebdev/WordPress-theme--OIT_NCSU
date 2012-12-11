@@ -17,7 +17,7 @@ article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu
 #wrapper {margin:0 auto;padding:0;width:1000px; position: relative; margin-bottom:10%;}
 #middle {background-color:#FFF; background-image:url(../img/navBack.jpg); background-repeat:repeat-y; color:#333;padding:0px 0 0;width:1000px; }
 #three_col_vert #headertop,#two_col_vert #headertop {margin-bottom:12px; position:relative;}
-#content {padding:0px 4px 0px 6px;float:left;}
+#content {padding:0px 6px 0px 0px;float:left;}
 
 
 /* NOSCRIPT ALERT */
