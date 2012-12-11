@@ -650,6 +650,13 @@ $args = array(
 );
 add_theme_support( 'custom-header', $args );
 
+//...and change the background color so a white transparent image is visible
+function admin_css() {
+    wp_enqueue_style( 'admin_css', get_template_directory_uri() . '/css/admin.css' );
+}
+add_action('admin_print_styles', 'admin_css' );
+
+
 // Add a "featured" category to make the homepage slider implementation easier
 function create_my_cat () {
     if (file_exists (ABSPATH.'/wp-admin/includes/taxonomy.php')) {
