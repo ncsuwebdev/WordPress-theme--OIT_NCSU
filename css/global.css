@@ -10,15 +10,14 @@ body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:62.5%;margin:0;
 /* Note: Make HTML 5 elements block-level for consistent styling */
 
 /* General ************************************************/
-#two_col_vert #content { width:794px; /*border:solid 1px #c00;*/}
-#three_col_vert #content {width:530px; /*float:left; border:solid 1px #c00;*/}
+#two_col_vert #content { width:782px; /*border:solid 1px #c00;*/}
+#three_col_vert #content {width:528px; /*float:left; border:solid 1px #c00;*/}
 
 article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
 #wrapper {margin:0 auto;padding:0;width:1000px; position: relative; margin-bottom:10%;}
 #middle {background-color:#FFF; background-image:url(../img/navBack.jpg); background-repeat:repeat-y; color:#333;padding:0px 0 0;width:1000px; }
-#two_col_horiz section#content {clear:left;}
 #three_col_vert #headertop,#two_col_vert #headertop {margin-bottom:12px; position:relative;}
-#content {padding:0px 10px 0px 0px;float:left;}
+#content {padding:0px 4px 0px 6px;float:left;}
 
 
 /* NOSCRIPT ALERT */
@@ -269,7 +268,7 @@ p{color:#333;font-family:"Verdana", Arial , Helvetica, sans-serif;font-size:1.1e
 #content ul li, #content ol li {font-size:1.1em;line-height:1.4em;padding-bottom:5px}
 #content li li{font-size:100%}
 #content ul li{list-style-image:url(../img/right-arrow.gif)}
-#content p,#content li,#content blockquote{padding-right:40px}
+#content li,#content blockquote{padding-right:40px}
 #two_col_horiz #content blockquote, #two_col_vert #content blockquote{padding-left: 40px; padding-right:40px}
 ul{margin:0 30px 18px}
 ol{margin:0 0 18px 1.5em}
