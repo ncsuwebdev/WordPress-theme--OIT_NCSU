@@ -10,21 +10,21 @@ body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:62.5%;margin:0;
 /* Note: Make HTML 5 elements block-level for consistent styling */
 
 /* General ************************************************/
-#two_col_vert #content { width:782px; /*border:solid 1px #c00;*/}
-#three_col_vert #content {width:528px; /*float:left; border:solid 1px #c00;*/}
-
 article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
-#wrapper {margin:0 auto;padding:0;width:1000px; position: relative; margin-bottom:10%;}
+#wrapper {margin:0 auto;padding:0;width:1000px; margin-bottom:10%;}
 #middle {background-color:#FFF; background-image:url(../img/navBack.jpg); background-repeat:repeat-y; color:#333;padding:0px 0 0;width:1000px; }
 #three_col_vert #headertop,#two_col_vert #headertop {margin-bottom:12px; position:relative;}
-#content {padding:0px 6px 0px 0px;float:left;}
+
+#content {padding:4px 10px 2px 12px; float:left;}
+#two_col_vert #content {max-width:772px; clear:none; /*border:solid 1px #c00;*/}
+#three_col_vert #content {max-width:516px; clear:none; /*float:left; border:solid 1px #c00;*/}
 
 
 /* NOSCRIPT ALERT */
 #js-alert { background-color: #CC0000; border-bottom: 1px solid white; color: white; font-size: 1.5em; padding: .3em; text-align: center;}
 
 /* HEADER AND FOOTER */
-#three_col_vert #headertop, #two_col_vert #headertop { width:1000px;overflow: hidden; margin-bottom:2px; }
+#three_col_vert #headertop, #two_col_vert #headertop {width:1000px;overflow: hidden; margin-bottom:2px; }
 #three_col_vert .bg #headertop,#two_col_vert .bg #headertop{border:none;margin-left:2px;}
 
 #headertop{background:url(../img/topnav-BLANK.jpg) no-repeat 0 0;margin:0 auto;padding:0;width:1000px; height:130px; color:#fff;}
@@ -186,6 +186,11 @@ aside#sidebar .widget {
   width:246px;
   border:solid 1px #FFFF33;
 }
+
+/* CALENDAR WIDGET */
+#calendar_wrap {padding:16px 0 16px 36px; border:1px solid #FF9897;}
+aside#sidebar .widget_calendar {background-image:none !important;}
+
 
 #middle aside#sidebar li.widget {list-style-type:none;}
 #middle aside#sidebar li.widget ul {line-height:1.3em;font-size:1.1em;margin:0;padding:8px 12px;}

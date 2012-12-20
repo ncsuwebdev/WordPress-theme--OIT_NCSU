@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-#wrapper{ width: 100%;  margin: 0; float: none; background: #fff url(none); }
+#wrapper{margin: 0; float: none; background: #fff url(none); }
 
 #nav, #brand_bar, #foot, div.hidden-anchors, .screen-reader-text { display: none; }
 
