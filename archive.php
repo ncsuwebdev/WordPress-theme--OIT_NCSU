@@ -14,7 +14,7 @@
 				</ul>
         </div><!-- div#crumbs -->	
 		*/ ?>
-
+<div id="textBlock">
 <?php the_post() ?>
 
 <?php if ( is_day() ) : ?>
@@ -65,7 +65,7 @@
 				<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' ) ) ?></div>
 			</div>
 
-            
+</div>           
 				</section>
                 <!-- end #content -->
                  

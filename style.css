@@ -5,7 +5,7 @@ GITHUB THEME URI: https://github.com/ncsuwebdev/WordPress-theme--OIT_NCSU
 DESCRIPTION: NC State look-alike theme designed by OIT Design. Built off Sandbox Theme by Andy Skelton and Scott Allan Wallick.
 AUTHOR: Jen Riehle, NC State OIT Design
 AUTHOR URI: http://oitdesign.ncsu.edu
-Version: 0.95
+Version: 0.951
 License: GNU General Public License
 License URI: license.txt
 TAGS: two-column, three-column, NC State framework, widgets, white, gray, fixed-width, featured content
@@ -90,6 +90,8 @@ div#homepage_column_holder li.widget ul li a:hover{text-decoration:underline;}
 h2.entry-title {font-size:2.3em; font-weight:normal; color:#c00; padding:14px 0px 18px;}
 h2.entry-title span {padding-left:12px;}
 h3.entry-title a {color:#c00; font-weight:normal;}
+
+#textBlock {padding:10px 0px 0px 16px;}
 
 
 /* Responsive Design */
