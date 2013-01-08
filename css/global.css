@@ -190,8 +190,8 @@ aside#sidebar .textwidget img {
 }
 
 /* CALENDAR WIDGET */
-#calendar_wrap {padding:16px 0 16px 36px; border:1px solid #FF9897;}
-aside#sidebar .widget_calendar {background-image:none !important;}
+#calendar_wrap {}
+aside#sidebar .widget_calendar {}
 
 
 /* OTHER WIDGETS */
