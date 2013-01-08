@@ -65,5 +65,5 @@
 				</section>
                 <!-- end #content -->
                  
-<?php get_sidebar(right) ?>                                      
+<?php get_sidebar(posts) ?>                                      
 <?php get_footer() ?>

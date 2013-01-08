@@ -96,6 +96,7 @@
 			</div><!-- .post -->
 
 			<?php comments_template() ?>
+            <div style="clear:both"></div>
             
             <?php 
 				endwhile; 

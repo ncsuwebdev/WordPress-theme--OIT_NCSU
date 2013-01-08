@@ -108,7 +108,7 @@ div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px
 
 
 /* NEW SIDEBAR */
-aside {display:inline;float:right;margin:0;padding:4px 4px 0 4px;width:250px;  }
+aside {display:inline;float:right;margin:0;padding:4px 4px 0 4px;width:250px;font-size:1.1em; }
 aside#sidebar {
   display:block;
   float:right;
@@ -134,15 +134,17 @@ aside#sidebar .widgettitle {
   width:auto;
 }
 
-aside#sidebar .widget ul {
+aside#sidebar .widget ul, aside#sidebar .widget select {
+  margin:0px;
   background-image:url(../img/sidebar-border.png);
   background-position:0 50%;
   background-repeat:no-repeat repeat;
   border-top-color:#FF9897;
   border-top-style:solid;
   border-top-width:1px;
-  padding:20px 20px 0 2px;
+  padding:20px 20px 0 20px;
 }
+aside#sidebar .widget ul li {line-height:20px;}
 
 aside#sidebar .widget {
   background-image:url(../img/sidebar_border_bottom.png);
@@ -153,8 +155,8 @@ aside#sidebar .widget {
   color:#000;
 }
 
-/* TEXT WIDGET */
 
+/* TEXT WIDGET */
 #middle aside#sidebar .widget_text h3 {
   background-image:url(../img/sidebar_header-arrow.png);
   background-position:0 10px;
@@ -180,11 +182,10 @@ aside#sidebar .widget {
 }
 
 #middle aside#sidebar .widget_text img {
-  margin:0;
-  padding:-10px -20px;
-  height:143px;
-  width:246px;
-  border:solid 1px #FFFF33;
+  display:block;
+  margin:-10px 0px 12px -20px;
+  max-width:246px;
+  height:auto;
 }
 
 /* CALENDAR WIDGET */
@@ -192,6 +193,7 @@ aside#sidebar .widget {
 aside#sidebar .widget_calendar {background-image:none !important;}
 
 
+/* OTHER WIDGETS */
 #middle aside#sidebar li.widget {list-style-type:none;}
 #middle aside#sidebar li.widget ul {line-height:1.3em;font-size:1.1em;margin:0;padding:8px 12px;}
 #middle aside#sidebar li.widget ul li {margin:0 0 .5em; list-style:none;}
@@ -199,7 +201,6 @@ aside#sidebar .widget_calendar {background-image:none !important;}
 #middle aside#sidebar li.widget ul li a:hover{text-decoration:underline;}
 
 #middle aside#sidebar li.widget_search .widgettitle {display:none;}
-
 
 #sidebar-new::after {
   clear:both;

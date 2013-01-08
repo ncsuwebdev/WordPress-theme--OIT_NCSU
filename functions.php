@@ -542,24 +542,24 @@ function sandbox_widgets_init() {
 	register_sidebar( array(
 		'name' => 'Home Sidebar',
 		'id' => 'home_sidebar',
-		'before_widget'  =>   '<div id="home"><li id="%1$s" class="widget %2$s">',
-		'after_widget'   =>   '</li></div>',
+		'before_widget'  =>   '<div id="%1$s" class="widget %2$s">',
+		'after_widget'   =>   '</div>',
 		'before_title'   =>   '<h3 class="widgettitle">',
 		'after_title'    =>   '</h3>'
 	) );
 	register_sidebar( array(
 		'name' => 'Main Sidebar',
 		'id' => 'sidebar_main',
-		'before_widget'  =>   '<li id="%1$s" class="widget %2$s">',
-		'after_widget'   =>   '</li>',
+		'before_widget'  =>   '<div id="%1$s" class="widget %2$s">',
+		'after_widget'   =>   '</div>',
 		'before_title'   =>   '<h3 class="widgettitle">',
 		'after_title'    =>   '</h3>'
 	) );
 	register_sidebar( array(
-		'name' => 'Alternate Sidebar',
-		'id' => 'sidebar_alt',
-		'before_widget'  =>   '<li id="%1$s" class="widget %2$s">',
-		'after_widget'   =>   '</li>',
+		'name' => 'Posts Sidebar',
+		'id' => 'sidebar_posts',
+		'before_widget'  =>   '<div id="%1$s" class="widget %2$s">',
+		'after_widget'   =>   '<div>',
 		'before_title'   =>   '<h3 class="widgettitle">',
 		'after_title'    =>   '</h3>'
 	) );
