@@ -543,25 +543,25 @@ function sandbox_widgets_init() {
 		'name' => 'Home Sidebar',
 		'id' => 'home_sidebar',
 		'before_widget'  =>   '<div id="%1$s" class="widget %2$s">',
-		'after_widget'   =>   '</div>',
+		'after_widget'   =>   '</div></div>',
 		'before_title'   =>   '<h3 class="widgettitle">',
-		'after_title'    =>   '</h3>'
+		'after_title'    =>   '</h3><div class="helper">'
 	) );
 	register_sidebar( array(
 		'name' => 'Main Sidebar',
 		'id' => 'sidebar_main',
 		'before_widget'  =>   '<div id="%1$s" class="widget %2$s">',
-		'after_widget'   =>   '</div>',
+		'after_widget'   =>   '</div></div>',
 		'before_title'   =>   '<h3 class="widgettitle">',
-		'after_title'    =>   '</h3>'
+		'after_title'    =>   '</h3><div class="helper">'
 	) );
 	register_sidebar( array(
 		'name' => 'Posts Sidebar',
 		'id' => 'sidebar_posts',
 		'before_widget'  =>   '<div id="%1$s" class="widget %2$s">',
-		'after_widget'   =>   '<div>',
+		'after_widget'   =>   '</div></div>',
 		'before_title'   =>   '<h3 class="widgettitle">',
-		'after_title'    =>   '</h3>'
+		'after_title'    =>   '</h3><div class="helper">'
 	) );
 
 /*

@@ -3,6 +3,7 @@
 
 <section id="content" role="main">
 	<h6 class="screen-reader-text">Content</h6>
+    <div class="<?php sandbox_post_class() ?>">
 
 <?php if ( have_posts() ) : ?>
 
@@ -61,9 +62,9 @@
 
 <?php endif; ?>
 
-            
-				</section>
-                <!-- end #content -->
+            </div>
+        </section>
+        <!-- end #content -->
                  
 <?php get_sidebar('right') ?>                                      
 <?php get_footer() ?>
