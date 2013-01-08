@@ -142,10 +142,10 @@ aside#sidebar .widget .helper {
   border-top-color:#FF9897;
   border-top-style:solid;
   border-top-width:1px;
-  padding:20px 20px 0px 20px;
+  padding:14px 20px 0px 20px;
 }
 aside#sidebar .widget ul {margin:0; padding:0;}
-aside#sidebar .widget ul li {line-height:20px;}
+aside#sidebar .widget ul li {line-height:12px; padding:5px 0px;}
 
 aside#sidebar .widget {
   background-image:url(../img/sidebar_border_bottom.png);
@@ -165,7 +165,9 @@ aside#sidebar .widget_text h3 {
   font-size:1.2em;
   
 }
-aside#sidebar .widget_text h3.widgettitle {padding-top:14px; letter-spacing:normal;font-weight:600;background-color:#fff;color:#333;text-transform:capitalize;}
+aside#sidebar .widget_text h3.widgettitle 
+{padding-top:14px; letter-spacing:normal;font-weight:600;background-color:#fff;color:#333;text-transform:capitalize;}
+h3.widgettitle a {color:#fff !important;}
 
 aside#sidebar .widget_text .helper {border:none; background:none;}
 aside#sidebar .widget_text {
