@@ -46,7 +46,7 @@ div#menu ul li,div.gallery dl,div.navigation div.nav-previous{float:left;}
 div#header,div#footer{text-align:center;}
 input#author,input#email,input#url,div.navigation div{width:50%;}
 div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul{margin:0;padding:0;}
-div.hentry, div.error404 {margin:14px 0 3em 1.4em; clear:both;}
+div.hentry, div.error404 {margin:14px 0 4em 1.4em; clear:both;}
 img.attachment-thumbnail{width:120px;float:left;margin:6px 2em 1em 0;}
 
 div.feature-image {float:right; padding-right:4px; margin-bottom:10px;}

@@ -45,10 +45,11 @@
 					<span class="cat-links"><?php printf( __( 'Also posted in %s', 'sandbox' ), $cats_meow ) ?></span>
 					<span class="meta-sep">|</span>
 <?php endif ?>
-					<?php the_tags( __( '<span class="tag-links">Tagged ', 'sandbox' ), ", ", "</span>\n\t\t\t\t\t<span class=\"meta-sep\"></span>\n" ) ?>
-<?php edit_post_link( __( 'Edit', 'sandbox' ), "\t\t\t\t\t| <span class=\"edit-link\">", "</span>\n\t\t\t\t\t<span class=\"meta-sep\"></span>\n" ) ?>
+					<?php the_tags( __( '<span class="tag-links">Tagged ', 'sandbox' ), ", ", "</span>\n\t\t\t\t\t| <span class=\"meta-sep\"></span>\n" ) ?>
+<?php edit_post_link( __( 'Edit', 'sandbox' ), "<span class=\"edit-link\">", "</span>\n\t\t\t\t\t<span class=\"meta-sep\"></span>\n" ) ?>
 					
 				</div>
+                
 			</div><!-- .post -->
 
 <?php endwhile; ?>
