@@ -5,7 +5,9 @@
 	<title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
     <meta name="description" content="<?php bloginfo('description') ?>" />
-	<?php wp_head() // For plugins ?>
+	
+     <?php wp_head() // For plugins ?>
+     
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
@@ -22,10 +24,9 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
     
     <!-- Core JS -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="<?php bloginfo('template_directory') ?>/js/ariaTabs3b.js" type="text/javascript"></script>
 	<script src="<?php bloginfo('template_directory') ?>/js/global.js" type="text/javascript"></script>
-    
     
     <!--[if IE]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

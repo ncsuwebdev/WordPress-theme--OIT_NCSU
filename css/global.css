@@ -11,7 +11,7 @@ body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:62.5%;margin:0;
 
 /* General ************************************************/
 article,address,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
-#wrapper {margin:0 auto;padding:0;width:1000px; margin-bottom:10%;}
+#wrapper {margin:0 auto;padding:0;width:1000px; margin-bottom:2%;}
 #middle {background-color:#FFF; background-image:url(../img/navBack.jpg); background-repeat:repeat-y; color:#333;padding:0px 0 0;width:1000px; }
 #three_col_vert #headertop,#two_col_vert #headertop {margin-bottom:12px; position:relative;}
 
@@ -83,6 +83,7 @@ div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px
 	background:#383838;  
 	margin:5px 0 0px -28px;
 	padding:3px 0 8px; 
+	border-bottom:solid 1px #fff;
 }
 #menu ul li.current-menu-item ul li,
 #menu ul li.current-menu-parent ul li {
@@ -157,25 +158,26 @@ aside#sidebar .widget {
 }
 
 
-/* TEXT WIDGET */
-aside#sidebar .widget_text h3 {
+/* TEXT WIDGET */ /* includes fixes to remove cut bottom for CALENDAR and TEXT; widgettitle is different for CALENDAR and TEXT! */
+aside#sidebar .widget_text h3{
   background-image:url(../img/sidebar_header-arrow.png);
   background-position:0 10px;
   background-repeat:no-repeat no-repeat;
   font-size:1.2em;
   
 }
-aside#sidebar .widget_text h3.widgettitle 
-{padding-top:14px; letter-spacing:normal;font-weight:600;background-color:#fff;color:#333;text-transform:capitalize;}
+aside#sidebar .widget_text h3.widgettitle {padding-top:14px; letter-spacing:normal;font-weight:600;background-color:#fff;color:#333;text-transform:capitalize;}
 h3.widgettitle a {color:#fff !important;}
 
 aside#sidebar .widget_text .helper {border:none; background:none;}
-aside#sidebar .widget_text {
+aside#sidebar .widget_text, aside#sidebar .widget_gce_widget .helper { /* plain box with no cut bottom for CALENDAR and TEXT */
   border:1px solid #FF9897;
   background:none;
-   line-height:16px;
+  line-height:16px;
   font-size:0.85em;
+  padding-bottom:12px;
 }
+aside#sidebar .widget_gce_widget {background:none;} /* removes cut bottom image from CALENDAR widget */
 
 aside#sidebar .widget_text a {
   color:#333333;
@@ -193,10 +195,22 @@ aside#sidebar .textwidget img {
   height:auto;
 }
 
-/* CALENDAR WIDGET */
-#calendar_wrap {}
-aside#sidebar .widget_calendar {}
+/* CALENDAR WIDGET */ /* calendar box edits to remove cut bottom above */
+aside#sidebar .gce-widget-grid {margin-top:8px;}
+aside#sidebar .gce-month-title {font-weight:bold; color:#333; font-size:1.2em; line-height:1.4em;}
+aside#sidebar .gce-widget-list .gce-list .gce-list-event {background:none; font-weight:bold;}
+aside#sidebar ul.gce-list li {margin-bottom:3px;}
+aside#sidebar .gce-list-title {font-size:1.1em;}
+aside#sidebar .gce-event-info .gce-tooltip-event {background-color:transparent;}
+aside#sidebar .gce-widget-grid .gce-calendar td {color:#333;}
+aside#sidebar .gce-widget-grid .gce-calendar td.gce-day-past {color:#ccc;}
+aside#sidebar .gce-widget-grid .gce-calendar .gce-has-events {color:#c00;}
 
+
+/* RSS WIDGET */
+a.rsswidget {font-weight:bold; display:block;}
+h3 a.rsswidget {display:inline;}
+.helper a.rsswidget {font-weight:normal;}
 
 /* OTHER WIDGETS */
 #middle aside#sidebar li.widget {list-style-type:none;}
