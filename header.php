@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" <?php language_attributes() ?>>
 <head>
-
+	
 	<title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
     <meta name="description" content="<?php bloginfo('description') ?>" />
@@ -30,7 +30,8 @@
     <!--[if IE]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+    
 </head>
 
 <!--<body id="<?php //echo generate_layout_id(); ?>" class="<?php //sandbox_body_class() ?>">-->

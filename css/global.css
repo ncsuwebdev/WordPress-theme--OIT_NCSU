@@ -48,12 +48,13 @@ ul#menu-utility-nav li a { color: black; text-decoration: none; }
 
 /* Left Navigation ****************************************/
 nav {display:inline;float:left; background-color:#e5e2d1; min-height:400px;}
-#middle nav {color:#fff; background:#E0DDCE;font-family:helvetica, arial, sans-serif;}
+#middle nav {color:#fff; background:#e1dece;font-family:helvetica, arial, sans-serif;}
 #middle nav ul {padding:0;margin:0; }
 #three_col_vert nav,#two_col_vert nav{margin:0 ;width:204px}
 
-div.primaryNav #menu {background:#000; padding:5px 0 10px;}
-div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px solid #fff;padding:5px 0 10px;}
+div.primaryNav #menu {background:#171717; padding:5px 0 10px;}
+div.audience #menu {background:#666; border-top:3px solid #fff;padding:5px 0 10px;}
+div.redBlock {height:12px; background-color:#b80711; border-bottom:6px solid #fff; border-top:6px solid #fff;}
 #menu ul {width: 204px;}
 #menu ul li {
 		background-image: url(../img/bullet_nav.gif);
@@ -69,6 +70,9 @@ div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px
 	}
 #menu ul li a {color:#fff;}
 #menu ul li a:hover {text-decoration:underline;}
+div.primaryNav #menu ul li:hover {background-color:#333;}
+div.primaryNav #menu ul ul.sub-menu li:hover {background-color:#595959;}
+div.audience #menu ul li:hover {background-color:#474747;}
 
 #menu ul li ul {left:-999em;position:absolute;}
 #menu ul li.current-menu-item {
@@ -83,17 +87,17 @@ div.audience #menu {background:#333; border-bottom:1px solid #fff;border-top:1px
 	background:#383838;  
 	margin:5px 0 0px -28px;
 	padding:3px 0 8px; 
-	border-bottom:solid 1px #fff;
 }
 #menu ul li.current-menu-item ul li,
 #menu ul li.current-menu-parent ul li {
 	background:none;
-	padding:2px 2px 2px 28px;
+	padding:4px 2px 3px 28px;
 	font-size:.9em;
-	line-height:1.4em; 
+	line-height:1.3em; 
 	font-weight:normal;
 	text-transform:capitalize;
 }
+#menu ul li.current-menu-item li:hover {background-color:#171717;}
 
 /* Right Navigation ***************************************/
 
@@ -185,7 +189,7 @@ aside#sidebar .widget_text a {
   text-decoration:none;
 }
 aside#sidebar .widget_text h3, aside#sidebar .textwidget {
-  font-size:1.2em;
+  font-size:1.3em;
 }
 
 aside#sidebar .textwidget img {
@@ -258,7 +262,7 @@ footer div.footer_top_holder {background:#c00; border-top:solid 1px #fff; height
 
 footer ul li {display:inline;}
 footer ul li a {font-size:1.1em;color:#fff;}
-footer ul li:after {content:" | ";padding:0 6px;}
+footer ul li:after {content:" | "; font-size:1.3em; padding:0 6px; color:#ae060f;}
 footer ul li:last-child:after {content:none;}
 footer div.footer_top_holder ul a {color:#fff; text-decoration:none;}
 

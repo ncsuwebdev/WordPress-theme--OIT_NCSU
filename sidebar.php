@@ -17,7 +17,9 @@
        <?php if ( has_nav_menu( 'primary' ) ) : ?>
        	<div class="primaryNav">
         	<ul id="menu">
-				<?php wp_nav_menu( array('theme_location' => 'primary' ) ); ?>
+             	<ul>
+					<?php wp_nav_menu( array('theme_location' => 'primary' ) ); ?>
+             	</ul>
              </ul>
         </div>
         <?php endif; ?>
@@ -30,5 +32,6 @@
              </ul>
         </div>
         <?php endif; ?>
+        <div class="redBlock"></div>
         
 	</nav><!-- end nav -->

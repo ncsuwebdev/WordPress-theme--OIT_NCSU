@@ -15,7 +15,7 @@
                 <li><a href="http://policies.ncsu.edu/" target="University Policies">University Policies</a></li>
                 <li><a href="http://www.ncsu.edu/about-site/" target="About NCSU website">About the Site</a></li>
                 <li><a href="https://jobs.ncsu.edu/" target="NC State Jobs">Jobs</a></li>
-                <li><a href="http://www.ncsu.edu/contact-us/" target="Contact NC State">Contact NC State</a></li>
+                <li><a href="http://www.ncsu.edu/contact-us/" target="Contact NC State">Contact Us</a></li>
                
             </ul>
            
