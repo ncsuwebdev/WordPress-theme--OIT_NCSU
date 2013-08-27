@@ -65,9 +65,9 @@
         </div> <!-- end player -->
         <?php endif; ?>
         
-        
-        <?php global $query_string;
-			query_posts( $query_string );  ?>
+        <?php //global $query_string;
+			//query_posts( $query_string );  ?>
+        <?php $query = new WP_Query( 'posts_per_page=5' ); ?>
             
 		<?php while ( have_posts() ) : the_post() ?>
 

@@ -80,7 +80,7 @@ Javascript is disabled. The styling of this page may not render properly in cert
                 <div class="search-box"> 
                     <label for="s"><span class="screen-reader-text">Search</span></label>
                     <input type="text" onfocus="clear_search(this)" class="search-query" value="Search this site" name="s"> 
-                    <input type="submit" id="searchsubmit" class="search-button" value="" tabindex="0">
+                    <input type="submit" id="searchsubmit" class="search-button" value="" alt="Search" tabindex="0">
                 </div>
                 </form>   
             

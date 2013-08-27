@@ -62,7 +62,7 @@ div.redBlock {height:12px; background-color:#b80711; border-bottom:6px solid #ff
 		background-repeat:no-repeat no-repeat;
 		display:block; 
 		padding:6px 3px 6px 28px; 
-		font-size:1.3em; font-weight:bold; 
+		font-size:1.4em; font-weight:bold; 
 		line-height:1.3em; 
 		text-decoration:none; 
 		text-transform:uppercase; 
@@ -189,7 +189,7 @@ aside#sidebar .widget_text a {
   text-decoration:none;
 }
 aside#sidebar .widget_text h3, aside#sidebar .textwidget {
-  font-size:1.3em;
+  font-size:1.2em;
 }
 
 aside#sidebar .textwidget img {
@@ -290,7 +290,7 @@ h6{font-size:1.2em;padding:10px 0}
 a:link{color:#CC0000; text-decoration:none;}
 a:visited{color:#CC0000}
 a:active,a:hover{text-decoration:underline; color:#CC0000;}
-p{color:#333;font-family:"Verdana", Arial , Helvetica, sans-serif;font-size:1.1em;line-height:1.6em;margin-bottom:18px}
+p{color:#333;font-family:"Verdana", Arial , Helvetica, sans-serif;font-size:1.1em;line-height:1.4em;margin-bottom:18px}
 #content p {}
 #content ul {list-style:disc; }
 #content ol {list-style:decimal;}
