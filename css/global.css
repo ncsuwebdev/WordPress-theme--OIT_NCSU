@@ -59,7 +59,7 @@ div.redBlock {height:12px; background-color:#b80711; border-bottom:6px solid #ff
 #menu ul li {
 		background-image: url(../img/bullet_nav.gif);
 		background-position:16px 0.85em;
-		background-repeat:no-repeat no-repeat;
+		background-repeat:no-repeat;
 		display:block; 
 		padding:6px 3px 6px 28px; 
 		font-size:1.4em; font-weight:bold; 
@@ -129,7 +129,7 @@ aside#sidebar .widgettitle {
   background-color:#CC0000;
   background-image:url(../img/sidebar_header_cut.png);
   background-position:100% 100%;
-  background-repeat:no-repeat no-repeat;
+  background-repeat:no-repeat;
   color:#FFFFFF;
   display:inline-block;
   font-size:1.2em;
@@ -155,7 +155,7 @@ aside#sidebar .widget ul li {line-height:12px; padding:5px 0px;}
 aside#sidebar .widget {
   background-image:url(../img/sidebar_border_bottom.png);
   background-position:50% 100%;
-  background-repeat:no-repeat no-repeat;
+  background-repeat:no-repeat;
   padding-bottom:25px;
   margin-bottom:25px;
   color:#000;
@@ -166,7 +166,7 @@ aside#sidebar .widget {
 aside#sidebar .widget_text h3{
   background-image:url(../img/sidebar_header-arrow.png);
   background-position:0 10px;
-  background-repeat:no-repeat no-repeat;
+  background-repeat:no-repeat;
   font-size:1.2em;
   
 }
