@@ -19,7 +19,7 @@
                     <div class="feature-image">
                     	<?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
                         <?php //the_post_thumbnail('medium'); ?>
-                        <p><?php the_post_thumbnail_caption(); ?></p>
+                        <p><?php get_the_post_thumbnail_caption(); ?></p>
                     </div>
                     <?php endif; ?>
 				<?php the_content() ?>
