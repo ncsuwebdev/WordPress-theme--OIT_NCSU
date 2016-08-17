@@ -45,7 +45,7 @@ if ( function_exists( 'add_image_size' ) ) {
 
 
 /* Get the_post_thumbnail_caption gets the caption for the lead image in the single.php template */
-function the_post_thumbnail_caption() {
+function get_the_post_thumbnail_caption() {
   global $post;
 
   $thumbnail_id    = get_post_thumbnail_id($post->ID);
