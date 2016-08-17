@@ -45,6 +45,7 @@ if ( function_exists( 'add_image_size' ) ) {
 
 
 /* Get the_post_thumbnail_caption gets the caption for the lead image in the single.php template */
+/*
 function get_the_post_thumbnail_caption() {
   global $post;
 
@@ -59,6 +60,7 @@ function get_the_post_thumbnail_caption() {
 		echo '<span class="caption">'.$thumbnail_image[0]->post_excerpt.'</span>';
 	}
 }
+*/
 
 // Generates semantic classes for BODY element
 function sandbox_body_class( $print = true ) {
